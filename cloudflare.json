@@ -1,7 +1,7 @@
 {
     "main":"public/javascripts/countersback.js",
     "name":"Counters Back",
-    "description": "Discover who is visiting your site! - The website visitors information you get includes names of companies, phone number, website address, and automatic daily, weekly or monthly emailed reports.  It also includes numerous other functions that will help you better understand your website visitors so that you can implement beneficial changes.",
+    "description": "Discover who is visiting your site! - The website visitors information you get includes names of companies, phone number, website address, and automatic daily, weekly or monthly emailed reports.",
     "version": "1.0.0",
     "category": "analytics",
     "account": {
