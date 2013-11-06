@@ -1,8 +1,8 @@
 {
     "main":"public/javascripts/countersback.js",
     "name":"Counters Back",
-    "description": "A sample CloudFlare application that brings counters back",
-    "version": "0.0.5b",
+    "description": "Discover who is visiting your site! - The website visitors information you get includes names of companies, phone number, website address, and automatic daily, weekly or monthly emailed reports.  It also includes numerous other functions that will help you better understand your website visitors so that you can implement beneficial changes.",
+    "version": "1.0.0",
     "category": "analytics",
     "account": {
         "callback_url": "http://countersback.herokuapp.com/api",
@@ -12,18 +12,18 @@
         "type": "zone",
         "plans":[
             {
-                "name" : "Chowder",
-                "price": "3.20"
+                "name" : "FREE 30 Days Trial",
+                "price": "0.00"
             },
             {
-                "name" : "Minestrone",
-                "price" : "6.55"
+                "name" : "Gold Service",
+                "price" : "50.00"
             }
         ]
     },
     "config":{
         "details":{
-            "Category": "CloudFlare App example",
+            "Category": "A1 Web Stats",
             "Language": "English",
             "Price": "Free to install.",
             "Restrictions": "None",
@@ -44,26 +44,52 @@
         "interface": [
             {
                 "type": "string",
-                "name": "Favorite Food",
-                "description": "Please tell us your favorite food.",
-                "id": "food",
+                "name": "First Name",
+                "description": "Please tell us your first name.",
+                "id": "fname",
+                "domain_request": true
+            },
+	    {
+                "type": "string",
+                "name": "Last Name",
+                "description": "Please tell us your last name.",
+                "id": "lname",
+                "domain_request": true
+            },
+	    {
+                "type": "string",
+                "name": "Company Name",
+                "description": "Please tell us your company name.",
+                "id": "cname",
                 "domain_request": true
             },
             {
-                "id": "lottery",
-                "type": "select",
-                "name": "Do you Lotto?",
-                "description": "Choose whether to buy a ticket",
-                "options": [
-                    {
-                        "label": "Yes, buy a ticket!",
-                        "value": "true"
-                    },
-                    {
-                        "label": "No, I am scared.",
-                        "value": ""
-                    }
-                ]
+                "type": "string",
+                "name": "Web Address",
+                "description": "Please tell us your web site address (URL).",
+                "id": "url",
+                "domain_request": true
+            },
+	    {
+                "type": "string",
+                "name": "Email Address",
+                "description": "Please tell us your email address.",
+                "id": "email",
+                "domain_request": true
+            },
+            {
+                "type": "string",
+                "name": "Username",
+                "description": "Please tell us your username.",
+                "id": "username",
+                "domain_request": true
+            },
+            {
+                "type": "string",
+                "name": "Password",
+                "description": "Please tell us your password.",
+                "id": "pword",
+                "domain_request": true
             }
         ]
     }
